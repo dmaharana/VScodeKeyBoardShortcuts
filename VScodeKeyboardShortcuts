@@ -1,0 +1,135 @@
+11 Useful VSCode Keyboard Shortcuts
+
+I went through dozens of VSCode keyboard shortcuts, avoided obvious ones and focused on less known but useful shortcuts. Animation was created for each shortcut so it's easier to understand without doing much reading. Commonplace shortcuts like Ctrl + C are same in most software and will not be mentioned.
+1. Shrink or Expand VSCode Selection
+
+Wait, what, we could do this?
+Visual Studio Code Keyboard Shortcuts
+
+I'll kick this article off with an example of my most favorite keyboard shortcut in VSCode. This shortcut allows you to either expand or shrink selection around natural block scope checkpoints (see animation above.)
+
+On Windows, hold Shift + Alt and use keyboard left and right arrows. On Mac it's shift + control and the arrows. Left arrow shrinks selection, right arrow expands it.
+
+This shortcut will stop at key points in your function block scopes. It will also stop inside your CSS style definition code and be mindful of opening and closing HTML tags. It helps you to intuitively do what you would have done using the mouse, which saves a lot of time if you develop a habit for using it.
+2. Move VSCode Selection One Line Up or Down
+
+Make selection. Hold Alt and press up or down arrows.
+vscode keyboard shortcut 2 - move selected text up or down one line
+
+Select a word, phrase or a function. While holding Alt use arrow keys up ordown to move the selection up or down in your source code.
+3. Copy Current VSCode Line Above or Below Selection
+
+You can make a copy of the current line to make another above or below it. This might save some time if you were to do same thing using classic copy and paste shortcuts Ctrl + C and Ctrl + V.
+
+Press Shift and Alt and use up and down arrow keys to copy the line either above or below. Continue holding Shift and Alt and using arrows to make as many copies as you need.
+
+(On a Mac, it's shift and option combo. )
+vscode keyboard shortcut 3 - copy current line up or down
+4. Jump Between Matching Opening or Closing { Brackets }
+
+Sometimes it's hard to tell what function or block scope a closing bracket belongs to. This is true especially when your code is long (like complex API end-point) or generally long functions with multiple for-loops, callbacks and other scopes.
+
+You can easily jump between closing and opening brackets of the same scope with this useful VSCode keyboard shortcut.
+
+To make this work, first you have to make sure the cursor caret is positioned right at the beginning or end of an opening or closing bracket.
+
+Press Ctrl + Shift and \ on Windows. Note: On a Mac it's Ctrl + command ⌘ and \.
+vscode keyboard shortcut 4 - copy current line up or down
+
+Your cursor will toggle-jump between opening and closing bracket.
+5. Indent Code Inside VSCode Selection
+
+Select a line, multiple lines or a block of code delimited by curly brackets that you want to indent. Now you can indent or outdent this block by using Ctrl and either [ or ] on Windows.
+
+On a Mac, it's command ⌘ and [ or ]
+vscode keyboard shortcut 5 - indent or outdent vscode selection
+6. Comment Entire VSCode Selection With Single-Line Comments //
+
+Sometimes you want to comment an entire block of code using // character and not the multi-line /* */ because multi-line comments cannot be nested. That situation can make this key combination useful.
+
+The shortcut is Ctrl + /.
+vscode keyboard shortcut 6 - wrap selection with single line comments
+
+VSCode is intelligent enough to understand whether you're commenting a block of JavaScript code, CSS code or if you're commenting HTML. In case of HTML it will actually use HTML comment brackets: <!-- --> (it will automatically identify type of code you're in by where your cursor and selection are.)
+7. Turn Selected Text Into Multiline Comment
+
+There are times you will want to wrap a block of code using the multi-line comment.
+
+Highlight the code you want to comment and press Shift + Alt + A.
+vscode keyboard shortcut 9 - create multi-line comment
+
+Pressing this combo again (or after selecting any multi-line comment block) will undo the multiline comment.
+8. Toggle Word Wrap
+
+To toggle word wrap press Alt + Z.
+vscode keyboard shortcut 8 - toggle text word wrap to collapse long lines of code
+
+There are times you need to wrap long lines of code so you don't have to use horizontal scrollbar to see them in their entirety. This shortcut will break down long lines of code.
+9. Create Multiple Cursor Selection On Any Line
+
+Use Ctrl + mouse click to add an extra cursor anywhere in your code.
+
+This is an interesting feature because it allows you to create a cursor (or multiple cursors) on any line, even if those lines are not neighboring. I personally don't know in which cases this can be useful but I thought it was so unique I decided to document it here.
+vscode keyboard shortcut x - create multiple cursor selection anywhere in your code
+10. Go To Line Number
+
+This one's pretty common, but I thought I'd include it here just to be complete.
+
+One of the essential shortcuts is Ctrl + G. It's helpful when you get a stack trace error and need to jump to a line of code where the error was generated.
+
+Hit the shortcut and start typing line number into popup input box. Then press Enter and your cursor caret will jump to that line number.
+vscode keyboard shortcut x - go to line number
+
+This example jumps to line number 10.
+11. Replace All Occurences Of Text In Current Selection
+
+This keyboard shortcut allows you to change an instance of a word, phrase or any span of text defined by current text selection to a replacement text value that you simply type in.
+vscode keyboard shortcut 11 - change all occurences of selection everywhere in the file
+
+Select something. Press Ctrl + Shift + L. This will select all words that match your current selection. It also adds a cursor to each text span matching your current selection.
+
+Simply start typing your replacement text and vscode will start replacing all instances of text matching your selection in-editor as you type. Press Escape to confirm changes.
+
+In this example we've selected the word "yellow" and changed it to "red" everywhere without invoking any extra search and replace UI. Multiple cursors are added automatically.
+Change all occurences in selection / regex / whole word / case sensitive version
+
+If you need advanced search and replace (with regex, case sensitivity and whole word option) use the more advanced Ctrl + H shortcut to replace all occurences of text.
+
+Alt + C toggles case-sensitivity.
+
+Alt + R toggles regex find and replace.
+
+Alt + W toggles whole word search.
+
+How To Change Binding On Existing VSCode Keyboard Shortcuts?
+
+Finally, what if you want to add your own keyboard shortcut to vscode?
+
+In VSCode you can assign your own keyboard shortcuts to any option or installed extention. You can also rename an existing keyboard shortcut key combination. VSCode has a global keyboard shortcut editor for that.
+
+Press Ctrl + K, followed by Ctrl + S (Note: you don't have to release Ctrl.) You'll enter keyboard shortcut editor where you can also search all key binding whether you're on Windows, Mac or Linux. This will display a screen with a list of all currently bound keyboard shortcuts, there are hundreds.
+
+Double click on any of the keyboard shortcuts and a new box will pop up with an input field. Click inside it and simply press the key combination to reassign to your own shortcut.
+
+You probably already know about this official VSCode keyboard shortcuts PDF. But VSCode potentially has hundreds of keyboard shortcuts not even mentioned in this official doc. You can access the table of all VSCode keyboard shortcuts, change binding of existing shortcuts or add your own custom key combination.
+VSCode Keyboard Shortcuts Covered In This Tutorial
+
+    Shrink or Expand VSCode Selection
+    Move VSCode Selection One Line Up or Down
+    Copy Current VSCode Line Above or Below Selection
+    Jump Between Matching Opening or Closing { Brackets }
+    Indent Code Inside VSCode Selection
+    Comment Entire VSCode Selection With Single-Line Comments //
+    Turn Selected Text Into Multiline Comment
+    Toggle Word Wrap
+    Create Multiple Cursor Selection On Any Line
+    Go To Line Number
+    Replace All Occurences Of Text In Current Selection
+
+Conclusion
+
+Many visual studio code keyboard shortcuts and key bindings are obvious whether you're on Windows 10, Mac or Linux - they are part of the standard set of shortcuts offered by many other text editors and IDE­s.
+
+But not all vscode shortcuts are useful, and some are hard to discover or guess. This guide focused on some of the less known but extremely helpful vs code keyboard shortcuts.
+
+Hopefully this tutorial helped you discover at least one new favorite shortcut!
